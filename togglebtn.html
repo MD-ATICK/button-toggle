@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle button</title>
+    <link rel="stylesheet" href="togglebtn.css">
+</head>
+
+<body>
+    <div class="content">
+        <span class="togglebtn"></span>
+    </div>
+
+    <script>
+        const togglebtn = document.querySelector(".content")
+
+        togglebtn.addEventListener("click" , ()=> {
+            if (!togglebtn.classList.contains("leftside")) {
+                togglebtn.classList.remove("reverse")
+                togglebtn.classList.add("leftside")
+
+            }else{
+                togglebtn.classList.remove("leftside")
+                togglebtn.classList.add("reverse")
+            }
+        })
+    </script>
+</body>
+</html>
